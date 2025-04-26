@@ -21,4 +21,56 @@ We utilized the following datasets after submittig a request with the National C
 - **Pancreatic, Lung, Colorectal, and Ovarian (PLCO) Dataset from the National Cancer Institute (NCI):** The colorectal dataset is a comprehensive dataset that contains all the PLCO study data available for colorectal cancer screening, incidence, and mortality analysis. This dataset contains one record for each of the approximately 155,000 participants in the PLCO trial. ([https://cdas.cancer.gov/datasets/plco/](https://cdas.cancer.gov/datasets/plco/))
 - **Healthy Lifestyle Dataset from the National Cancer Institute (NCI):** This dataset includes scores calculated for ~60,000 participants at baseline. ([https://cdas.cancer.gov/datasets/plco/](https://cdas.cancer.gov/datasets/plco/))
 
+### Installation
 
+- Clone the repository:
+    ```bash
+    git clone [repository URL]
+    ```
+- Ensure you have the necessary Python libraries installed:
+    ```bash
+    import numpy as np                  # Scientific Computing
+    import pandas as pd                 # Data Analysis
+    import matplotlib.pyplot as plt     # Plotting
+    import seaborn as sns               # Statistical Data Visualization
+    from sklearn.impute import SimpleImputer
+    from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
+    from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
+    from sklearn.linear_model import LogisticRegression
+    from sklearn.linear_model import LinearRegression
+    from sklearn import metrics
+    from sklearn.pipeline import Pipeline
+    from sklearn.metrics import mean_squared_error, accuracy_score, classification_report
+    from sklearn.metrics import roc_auc_score, confusion_matrix, ConfusionMatrixDisplay
+    import category_encoders as ce
+    import statsmodels.api as sm
+    ```
+- Download the datasets mentioned in the "Data Sources" section and ensure the file paths in the code match their locations.
+
+## Utilization
+
+This snippets show the initial steps in data exploration, cleaning, preprocessing, feature engineering, and model development.
+
+- **Data Loading:** The Python code shows how to load the colorectal cancer, and lifestyle datasets using pandas. D
+- **Data Cleaning and Preprocessing:** Datasets were merged using the primary key plco_id feature. The python code will show how to merge the datasets into a new CSV file as well. Missing values were handled, and feature selection was performed to focus on relevant variables for the health index score. 
+- **Feature Engineering:** Health-related score indices ('Healthy\_Food\_Score', 'Crime\_Score', 'Uninsured\_Score', 'Education\_Score', 'Liquor\_Store\_Score', 'Income\_Score') were created based on predefined thresholds.
+- **Data Transformation:** These health indices were weighted equally to create a 'Composite\_Score\_Weighted'.
+- **Exploratory Data Analysis:** Visualizations were generated to understand the relationships between variables (though the specific visualizations are not shown in the snippets).
+- **Model Development:** The following eight supervised machine learning algorithms are employed to construct predictive models:Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Decision Tree (DT), Random Forest (RF), Gradient Boosting (GB), AdaBoost, and XGBoost.
+- **Model Training:** The data was split into training 80% and test 20% sets, and features were scaled using `StandardScaler`.
+- **Model Evaluation:** Performance metrics such as Accuracy, Precision, Recall, F1-Score, and the area under the receiver operating characteristic (ROC-AUC) curve were used, along with Confusion Matrix. To address class imbalance in CRC cases, downsampling technique was implemented. Hyperparameter tuning allowed us to find the best settings for our model. We used grid search to test different combinations of settings and cross-validation to ensure the model works well on different parts of the data. The final model was selected based on its ability to generalize across unseen data while maintaining high predictive accuracy. Additionally, assess feature importance to gain deeper insights into CRC risk factors, aiming to visualize the top 13 risk factors and identify the most common key predictors using the best-performing models.
+
+To run the provided code snippets, ensure your Python environment is set up with the necessary libraries and that the file paths to the datasets are correct. You can execute these in a Jupyter Notebook or a Python script.
+
+
+Contributions to this project are welcome.
+
+[Project Markdown File](https://github.com/paulsplacemd/paulsplacemd.github.io/blob/1a76cd236a01e9974797d99d51558ef8f87c56cb/predictivemodel_paulsplace-3/predictivemodel_paulsplace.md)
+
+
+## Contact
+
+For questions or further information, please contact:
+
+# Howard University Pauls Place Health Squad.
+[Email](paulsplacemd@gmail.com)
