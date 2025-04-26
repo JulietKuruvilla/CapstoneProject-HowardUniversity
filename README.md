@@ -56,7 +56,7 @@ This snippets show the initial steps in data exploration, cleaning, preprocessin
 - **Feature Engineering:** Health-related score indices ('Healthy\_Food\_Score', 'Crime\_Score', 'Uninsured\_Score', 'Education\_Score', 'Liquor\_Store\_Score', 'Income\_Score') were created based on predefined thresholds.
 - **Data Transformation:** These health indices were weighted equally to create a 'Composite\_Score\_Weighted'.
 - **Exploratory Data Analysis:** Visualizations were generated to understand the relationships between variables (though the specific visualizations are not shown in the snippets).
-- **Model Development:** The following eight supervised machine learning algorithms are employed to construct predictive models:Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Decision Tree (DT), Random Forest (RF), Gradient Boosting (GB), AdaBoost, and XGBoost.
+- **Model Development:** The following eight supervised machine learning algorithms are employed to construct predictive models: Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Decision Tree (DT), Random Forest (RF), Gradient Boosting (GB), AdaBoost, and XGBoost.
 - **Model Training:** The data was split into training 80% and test 20% sets, and features were scaled using `StandardScaler`.
 - **Model Evaluation:** Performance metrics such as Accuracy, Precision, Recall, F1-Score, and the area under the receiver operating characteristic (ROC-AUC) curve were used, along with Confusion Matrix. To address class imbalance in CRC cases, downsampling technique was implemented. Hyperparameter tuning allowed us to find the best settings for our model. We used grid search to test different combinations of settings and cross-validation to ensure the model works well on different parts of the data. The final model was selected based on its ability to generalize across unseen data while maintaining high predictive accuracy. Additionally, assess feature importance to gain deeper insights into CRC risk factors, aiming to visualize the top 13 risk factors and identify the most common key predictors using the best-performing models.
 
@@ -72,5 +72,5 @@ Contributions to this project are welcome.
 
 For questions or further information, please contact:
 
-# Howard University Pauls Place Health Squad.
-[Email](paulsplacemd@gmail.com)
+# Howard University Student
+[Email](juliet.kuruvilla1@bison.howard.edu)
