@@ -73,4 +73,5 @@ Contributions to this project are welcome.
 For questions or further information, please contact:
 
 ## Howard University
-[Email](juliet.kuruvilla1@bison.howard.edu)
+✉️ [Email](mailto:juliet.kuruvilla1@bison.howard.edu)
+
