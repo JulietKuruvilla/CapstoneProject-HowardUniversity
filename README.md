@@ -16,7 +16,7 @@ This project aim to analyze and identify potential risk factors associated with 
 
 ### Data Sources
 
-We utilized the following datasets after submittig a request with the National Cancer Institute (NCI).
+We utilized the following datasets after submitting a request with the National Cancer Institute (NCI).
 
 - **Pancreatic, Lung, Colorectal, and Ovarian (PLCO) Dataset from the National Cancer Institute (NCI):** The colorectal cancer dataset is a comprehensive dataset that contains all the PLCO study data available for colorectal cancer screening, incidence, and mortality analysis. This dataset contains one record for each of the approximately 155,000 participants in the PLCO trial. ([https://cdas.cancer.gov/datasets/plco/](https://cdas.cancer.gov/datasets/plco/))
 - **Healthy Lifestyle Dataset from the National Cancer Institute (NCI):** The lifestyle dataset includes scores calculated for ~60,000 participants at baseline. ([https://cdas.cancer.gov/datasets/plco/](https://cdas.cancer.gov/datasets/plco/))
