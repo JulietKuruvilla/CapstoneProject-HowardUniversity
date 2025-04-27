@@ -70,8 +70,4 @@ Contributions to this project are welcome.
 
 ## Contact
 
-For questions or further information, please contact:
-
-## Howard University
-✉️ [Email](mailto:juliet.kuruvilla1@bison.howard.edu)
-
+If you have any questions, feel free to email (mailto:juliet.kuruvilla1@bison.howard.edu) me.
