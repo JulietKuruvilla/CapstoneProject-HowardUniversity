@@ -70,4 +70,4 @@ Contributions to this project are welcome.
 
 ## Contact
 
-If you have any questions, feel free to email (mailto:juliet.kuruvilla1@bison.howard.edu) me.
+If you have any questions, feel free to [email me](mailto:juliet.kuruvilla1@bison.howard.edu).
